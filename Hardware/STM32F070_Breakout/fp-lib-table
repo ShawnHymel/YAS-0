@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name digikey-footprints)(type KiCad)(uri C:/Users/sgmustadio/Documents/GitHub/digikey-kicad-library/digikey-footprints.pretty)(options "")(descr ""))
+  (lib (name STM32F070CBT6)(type Legacy)(uri ${KIPRJMOD}/libraries/STM32F070CBT6/STM32F070CBT6.mod)(options "")(descr ""))
+  (lib (name STM32F070_Breakout)(type KiCad)(uri ${KIPRJMOD}/libraries/STM32F070_Breakout.pretty)(options "")(descr ""))
+)
