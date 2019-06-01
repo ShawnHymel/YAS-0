@@ -1,4 +1,4 @@
-16393336802035229
+16394896160480391
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -68060,6 +68060,13 @@ Crystal_SMD_Abracon_ABLS
 0
 2
 2
+STM32F070_Breakout
+Crystal_SMD_Citizen_CM130
+
+
+0
+4
+4
 STM32F070_Breakout
 PTS647
 
