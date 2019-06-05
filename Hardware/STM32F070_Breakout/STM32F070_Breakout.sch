@@ -167,9 +167,9 @@ Wire Wire Line
 Wire Wire Line
 	1250 1450 1350 1450
 Text GLabel 1350 1350 2    50   Input ~ 0
-USB_DP
+USB_D+
 Text GLabel 1350 1450 2    50   Input ~ 0
-USB_DM
+USB_D-
 Wire Wire Line
 	1250 1150 1750 1150
 Wire Wire Line
@@ -362,30 +362,6 @@ Text Notes 6650 600  0    50   ~ 0
 LEDs
 Text Notes 550  600  0    50   ~ 0
 USB and Power
-$Comp
-L Connector_Generic:Conn_01x15 J2
-U 1 1 5CF20066
-P 9900 4500
-F 0 "J2" H 9850 5400 50  0000 L CNN
-F 1 "Conn_01x15" H 9500 5300 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 9900 4500 50  0001 C CNN
-F 3 "~" H 9900 4500 50  0001 C CNN
-	1    9900 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x15 J3
-U 1 1 5CF226AE
-P 10250 4500
-F 0 "J3" H 10250 5400 50  0000 C CNN
-F 1 "Conn_01x15" H 10100 5300 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 10250 4500 50  0001 C CNN
-F 3 "~" H 10250 4500 50  0001 C CNN
-	1    10250 4500
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	9700 3800 9600 3800
 Wire Wire Line
 	9700 3900 9600 3900
 Wire Wire Line
@@ -414,36 +390,6 @@ Wire Wire Line
 	9700 5100 9600 5100
 Wire Wire Line
 	9700 5200 9600 5200
-Text GLabel 9600 3800 0    50   Input ~ 0
-AREF
-Text GLabel 9600 3900 0    50   Input ~ 0
-AGND
-Text GLabel 9600 4000 0    50   Input ~ 0
-RESET
-Text GLabel 9600 4100 0    50   Input ~ 0
-A0
-Text GLabel 9600 4200 0    50   Input ~ 0
-A1
-Text GLabel 9600 4300 0    50   Input ~ 0
-A2
-Text GLabel 9600 4400 0    50   Input ~ 0
-A3
-Text GLabel 9600 4500 0    50   Input ~ 0
-A4
-Text GLabel 9600 4600 0    50   Input ~ 0
-A5
-Text GLabel 9600 4700 0    50   Input ~ 0
-A6
-Text GLabel 9600 4800 0    50   Input ~ 0
-A7
-Text GLabel 9600 4900 0    50   Input ~ 0
-A8
-Text GLabel 9600 5000 0    50   Input ~ 0
-A9
-Text GLabel 9600 5100 0    50   Input ~ 0
-D0
-Text GLabel 9600 5200 0    50   Input ~ 0
-D1
 Wire Wire Line
 	10450 5200 10550 5200
 Wire Wire Line
@@ -465,67 +411,38 @@ Wire Wire Line
 Wire Wire Line
 	10450 4300 10550 4300
 Wire Wire Line
-	10450 4200 10550 4200
-Wire Wire Line
-	10450 4100 10550 4100
-Wire Wire Line
 	10450 3800 10550 3800
-Text GLabel 10550 5200 2    50   Input ~ 0
-D2
 Text GLabel 10550 5100 2    50   Input ~ 0
-D3
+A0
 Text GLabel 10550 5000 2    50   Input ~ 0
-D4
+A1
 Text GLabel 10550 4900 2    50   Input ~ 0
-D5
+A2
 Text GLabel 10550 4800 2    50   Input ~ 0
-D6
-Text GLabel 10550 4700 2    50   Input ~ 0
-D7
+A3
 Text GLabel 10550 4600 2    50   Input ~ 0
-D10
+A5
 Text GLabel 10550 4500 2    50   Input ~ 0
-D11
+A6
 Text GLabel 10550 4400 2    50   Input ~ 0
-D13
+A7
 Text GLabel 10550 4300 2    50   Input ~ 0
-D14
+A8
 Text GLabel 10550 4200 2    50   Input ~ 0
-D15
-Text GLabel 10550 4100 2    50   Input ~ 0
-D16
+A9
 Text GLabel 10550 3800 2    50   Input ~ 0
 VIN
 $Comp
 L power:+3.3V #PWR028
 U 1 1 5CF45684
-P 10900 3800
-F 0 "#PWR028" H 10900 3650 50  0001 C CNN
-F 1 "+3.3V" H 10915 3973 50  0000 C CNN
-F 2 "" H 10900 3800 50  0001 C CNN
-F 3 "" H 10900 3800 50  0001 C CNN
-	1    10900 3800
+P 11100 3950
+F 0 "#PWR028" H 11100 3800 50  0001 C CNN
+F 1 "+3.3V" H 11115 4123 50  0000 C CNN
+F 2 "" H 11100 3950 50  0001 C CNN
+F 3 "" H 11100 3950 50  0001 C CNN
+	1    11100 3950
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR029
-U 1 1 5CF4627F
-P 10900 4100
-F 0 "#PWR029" H 10900 3850 50  0001 C CNN
-F 1 "GND" H 10905 3927 50  0000 C CNN
-F 2 "" H 10900 4100 50  0001 C CNN
-F 3 "" H 10900 4100 50  0001 C CNN
-	1    10900 4100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10900 3900 10900 3800
-Wire Wire Line
-	10450 3900 10900 3900
-Wire Wire Line
-	10900 4000 10900 4100
-Wire Wire Line
-	10450 4000 10900 4000
 Text Notes 9050 2850 0    50   ~ 0
 Headers
 $Comp
@@ -740,15 +657,15 @@ D11
 Text GLabel 1900 4800 0    50   Input ~ 0
 D10
 Text GLabel 1900 4900 0    50   Input ~ 0
-USB_DM
+USB_D-
 Text GLabel 1900 5000 0    50   Input ~ 0
-USB_DP
+USB_D+
 Text GLabel 1900 5100 0    50   Input ~ 0
 SWDIO
 Text GLabel 1900 5200 0    50   Input ~ 0
 SWCLK
 Text GLabel 1900 5300 0    50   Input ~ 0
-D7
+D0
 Text GLabel 1900 5500 0    50   Input ~ 0
 D17
 $Comp
@@ -1026,19 +943,19 @@ Text GLabel 7700 3900 2    50   Input ~ 0
 A9
 NoConn ~ 7600 4000
 Text GLabel 7700 4100 2    50   Input ~ 0
-D6
-Text GLabel 7700 4200 2    50   Input ~ 0
-D5
-Text GLabel 7700 4300 2    50   Input ~ 0
-D4
-Text GLabel 7700 4400 2    50   Input ~ 0
-D3
-Text GLabel 7700 4500 2    50   Input ~ 0
-D2
-Text GLabel 7700 4600 2    50   Input ~ 0
 D1
+Text GLabel 7700 4200 2    50   Input ~ 0
+D2
+Text GLabel 7700 4300 2    50   Input ~ 0
+D3
+Text GLabel 7700 4400 2    50   Input ~ 0
+D4
+Text GLabel 7700 4500 2    50   Input ~ 0
+D5
+Text GLabel 7700 4600 2    50   Input ~ 0
+D6
 Text GLabel 7700 4700 2    50   Input ~ 0
-D0
+D7
 NoConn ~ 7600 4800
 NoConn ~ 7600 4900
 Text GLabel 7700 5000 2    50   Input ~ 0
@@ -1277,4 +1194,110 @@ Wire Wire Line
 Connection ~ 8850 5850
 Wire Wire Line
 	8850 5850 8850 6100
+Text GLabel 9600 3900 0    50   Input ~ 0
+D0
+Text GLabel 9600 4000 0    50   Input ~ 0
+D1
+Text GLabel 9600 4100 0    50   Input ~ 0
+D2
+Text GLabel 9600 4200 0    50   Input ~ 0
+D3
+Text GLabel 9600 4300 0    50   Input ~ 0
+D4
+Text GLabel 9600 4400 0    50   Input ~ 0
+D5
+Text GLabel 9600 4500 0    50   Input ~ 0
+D6
+Text GLabel 9600 4600 0    50   Input ~ 0
+D7
+Text GLabel 9600 4700 0    50   Input ~ 0
+D10
+Text GLabel 9600 4800 0    50   Input ~ 0
+D11
+Text GLabel 9600 4900 0    50   Input ~ 0
+D13
+Text GLabel 9600 5000 0    50   Input ~ 0
+D14
+Text GLabel 9600 5100 0    50   Input ~ 0
+D15
+Text GLabel 9600 5200 0    50   Input ~ 0
+D16
+$Comp
+L power:GNDA #PWR0103
+U 1 1 5D02AF3F
+P 10900 3750
+F 0 "#PWR0103" H 10900 3500 50  0001 C CNN
+F 1 "GNDA" H 10905 3577 50  0000 C CNN
+F 2 "" H 10900 3750 50  0001 C CNN
+F 3 "" H 10900 3750 50  0001 C CNN
+	1    10900 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 4100 10550 4100
+Text GLabel 10550 4100 2    50   Input ~ 0
+AREF
+Text GLabel 10550 4700 2    50   Input ~ 0
+A4
+$Comp
+L power:GND #PWR0104
+U 1 1 5D05FB59
+P 9300 3900
+F 0 "#PWR0104" H 9300 3650 50  0001 C CNN
+F 1 "GND" H 9305 3727 50  0000 C CNN
+F 2 "" H 9300 3900 50  0001 C CNN
+F 3 "" H 9300 3900 50  0001 C CNN
+	1    9300 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 3800 9300 3900
+Wire Wire Line
+	9300 3800 9700 3800
+$Comp
+L Connector_Generic:Conn_01x16 J2
+U 1 1 5D06D550
+P 9900 4500
+F 0 "J2" H 9850 5400 50  0000 L CNN
+F 1 "Conn_01x16" H 9567 5315 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 9900 4500 50  0001 C CNN
+F 3 "~" H 9900 4500 50  0001 C CNN
+	1    9900 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x16 J3
+U 1 1 5D06E7A9
+P 10250 4500
+F 0 "J3" H 10157 5394 50  0000 C CNN
+F 1 "Conn_01x16" H 10157 5315 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 10250 4500 50  0001 C CNN
+F 3 "~" H 10250 4500 50  0001 C CNN
+	1    10250 4500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 3900 10800 3900
+Wire Wire Line
+	10800 3900 10800 3700
+Wire Wire Line
+	10800 3700 10900 3700
+Wire Wire Line
+	10900 3700 10900 3750
+Wire Wire Line
+	11100 4000 11100 3950
+Wire Wire Line
+	10450 4000 11100 4000
+Wire Wire Line
+	10450 5300 10550 5300
+Wire Wire Line
+	9700 5300 9600 5300
+Text GLabel 10550 5200 2    50   Input ~ 0
+D17
+Text GLabel 10550 5300 2    50   Input ~ 0
+RESET
+Text GLabel 9600 5300 0    50   Input ~ 0
+BOOT0
+Wire Wire Line
+	10450 4200 10550 4200
 $EndSCHEMATC
