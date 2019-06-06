@@ -309,7 +309,7 @@ U 1 1 5CF16C78
 P 10550 1450
 F 0 "J4" H 10630 1492 50  0000 L CNN
 F 1 "Conn_01x05" H 10630 1401 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 10550 1450 50  0001 C CNN
+F 2 "STM32F070_Breakout:PinHeader_1x05_P2.54mm_Vertical_NoSilk" H 10550 1450 50  0001 C CNN
 F 3 "~" H 10550 1450 50  0001 C CNN
 	1    10550 1450
 	1    0    0    -1  
@@ -1260,7 +1260,7 @@ U 1 1 5D06D550
 P 9900 4500
 F 0 "J2" H 9850 5400 50  0000 L CNN
 F 1 "Conn_01x16" H 9567 5315 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 9900 4500 50  0001 C CNN
+F 2 "STM32F070_Breakout:PinHeader_1x16_P2.54mm_Vertical_NoSilk" H 9900 4500 50  0001 C CNN
 F 3 "~" H 9900 4500 50  0001 C CNN
 	1    9900 4500
 	1    0    0    -1  
@@ -1271,7 +1271,7 @@ U 1 1 5D06E7A9
 P 10250 4500
 F 0 "J3" H 10157 5394 50  0000 C CNN
 F 1 "Conn_01x16" H 10157 5315 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 10250 4500 50  0001 C CNN
+F 2 "STM32F070_Breakout:PinHeader_1x16_P2.54mm_Vertical_NoSilk" H 10250 4500 50  0001 C CNN
 F 3 "~" H 10250 4500 50  0001 C CNN
 	1    10250 4500
 	-1   0    0    -1  

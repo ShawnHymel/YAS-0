@@ -1,4 +1,4 @@
-16396455579033263
+16399575290995630
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -68074,6 +68074,20 @@ Crystal_SMD_Citizen_CM130
 0
 4
 4
+STM32F070_Breakout
+PinHeader_1x05_P2.54mm_Vertical_NoSilk
+Through hole straight pin header, 1x05, 2.54mm pitch, single row
+Through hole pin header THT 1x05 2.54mm single row
+0
+5
+5
+STM32F070_Breakout
+PinHeader_1x16_P2.54mm_Vertical_NoSilk
+Through hole straight pin header, 1x16, 2.54mm pitch, single row
+Through hole pin header THT 1x16 2.54mm single row
+0
+16
+16
 STM32F070_Breakout
 PTS647
 
