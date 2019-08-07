@@ -1,4 +1,4 @@
-16405814970962893
+16408945232593339
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -68123,6 +68123,20 @@ Shawn-Logo_5x5mm_SilkScreen
 0
 0
 0
+STM32F070_Breakout
+Shawn-Logo_6x6mm_SilkScreen
+
+
+0
+0
+0
+STM32F070_Breakout
+TestPoint_Pad_1.0x2.5mm
+SMD rectangular pad as test Point, square 2.5mm side length
+test point SMD pad rectangle square
+0
+1
+1
 Symbol
 CE-Logo_8.5x6mm_SilkScreen
 CE marking

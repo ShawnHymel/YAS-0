@@ -5,9 +5,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "STM32F070 Breakout"
+Title "YAS-0 Board"
 Date "2019-05-30"
-Rev "v01"
+Rev "v02"
 Comp ""
 Comment1 ""
 Comment2 "creativecommons.org/licenses/by/4.0"
@@ -63,7 +63,7 @@ L Device:R R2
 U 1 1 5CF05ACA
 P 7150 1250
 F 0 "R2" H 7220 1296 50  0000 L CNN
-F 1 "330" H 7220 1205 50  0000 L CNN
+F 1 "1k" H 7220 1205 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7080 1250 50  0001 C CNN
 F 3 "~" H 7150 1250 50  0001 C CNN
 	1    7150 1250
@@ -74,7 +74,7 @@ L Device:R R3
 U 1 1 5CF05FEB
 P 7700 1250
 F 0 "R3" H 7770 1296 50  0000 L CNN
-F 1 "330" H 7770 1205 50  0000 L CNN
+F 1 "1k" H 7770 1205 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7630 1250 50  0001 C CNN
 F 3 "~" H 7700 1250 50  0001 C CNN
 	1    7700 1250
@@ -267,7 +267,7 @@ Wire Wire Line
 Wire Wire Line
 	7150 1000 7050 1000
 Text GLabel 7050 1000 0    50   Input ~ 0
-D17
+D20
 $Comp
 L Connector_Generic:Conn_01x05 J4
 U 1 1 5CF16C78
@@ -616,7 +616,6 @@ Text GLabel 1900 4400 0    50   Input ~ 0
 A6
 Text GLabel 1900 4500 0    50   Input ~ 0
 A7
-NoConn ~ 2000 4600
 Text GLabel 1900 4700 0    50   Input ~ 0
 D11
 Text GLabel 1900 4800 0    50   Input ~ 0
@@ -632,7 +631,7 @@ SWCLK
 Text GLabel 1900 5300 0    50   Input ~ 0
 D0
 Text GLabel 1900 5500 0    50   Input ~ 0
-D17
+D20
 $Comp
 L power:+3.3V #PWR021
 U 1 1 5D039F85
@@ -652,7 +651,7 @@ U 1 1 5D041486
 P 1500 7000
 F 0 "FB1" H 1500 7287 60  0000 C CNN
 F 1 "BLM18AG601SN1D" H 1500 7181 60  0000 C CNN
-F 2 "digikey-footprints:0603" H 1700 7200 60  0001 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1700 7200 60  0001 L CNN
 F 3 "https://www.murata.com/en-us/products/productdata/8796738650142/ENFA0003.pdf" H 1700 7300 60  0001 L CNN
 F 4 "490-1014-1-ND" H 1700 7400 60  0001 L CNN "Digi-Key_PN"
 F 5 "BLM18AG601SN1D" H 1700 7500 60  0001 L CNN "MPN"
@@ -921,8 +920,6 @@ Text GLabel 7700 4600 2    50   Input ~ 0
 D6
 Text GLabel 7700 4700 2    50   Input ~ 0
 D7
-NoConn ~ 7600 4800
-NoConn ~ 7600 4900
 Text GLabel 7700 5000 2    50   Input ~ 0
 D16
 Text GLabel 7700 5100 2    50   Input ~ 0
@@ -1258,7 +1255,7 @@ Wire Wire Line
 Wire Wire Line
 	9700 5300 9600 5300
 Text GLabel 10550 5200 2    50   Input ~ 0
-D17
+D20
 Text GLabel 10550 5300 2    50   Input ~ 0
 RESET
 Text GLabel 9600 5300 0    50   Input ~ 0
@@ -1331,4 +1328,61 @@ Wire Wire Line
 NoConn ~ 1250 1550
 Text Notes 2650 900  0    50   ~ 0
 Vin: 3.5 - 6.0 V\nImax: 600 mA
+Wire Wire Line
+	2000 4600 1900 4600
+Text GLabel 1900 4600 0    50   Input ~ 0
+D12
+$Comp
+L Connector_Generic:Conn_01x01 J5
+U 1 1 5D492255
+P 10400 5750
+F 0 "J5" H 10480 5792 50  0000 L CNN
+F 1 "Conn_01x01" H 10480 5701 50  0000 L CNN
+F 2 "STM32F070_Breakout:TestPoint_Pad_1.0x2.5mm" H 10400 5750 50  0001 C CNN
+F 3 "~" H 10400 5750 50  0001 C CNN
+	1    10400 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J6
+U 1 1 5D492A9F
+P 10400 5950
+F 0 "J6" H 10480 5992 50  0000 L CNN
+F 1 "Conn_01x01" H 10480 5901 50  0000 L CNN
+F 2 "STM32F070_Breakout:TestPoint_Pad_1.0x2.5mm" H 10400 5950 50  0001 C CNN
+F 3 "~" H 10400 5950 50  0001 C CNN
+	1    10400 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 5750 10100 5750
+Wire Wire Line
+	10200 5950 10100 5950
+Text GLabel 10100 5750 0    50   Input ~ 0
+D12
+Wire Wire Line
+	7600 4900 7700 4900
+Text GLabel 7700 4900 2    50   Input ~ 0
+D31
+Text GLabel 10100 5950 0    50   Input ~ 0
+D30
+$Comp
+L Connector_Generic:Conn_01x01 J7
+U 1 1 5D519CA9
+P 10400 6150
+F 0 "J7" H 10480 6192 50  0000 L CNN
+F 1 "Conn_01x01" H 10480 6101 50  0000 L CNN
+F 2 "STM32F070_Breakout:TestPoint_Pad_1.0x2.5mm" H 10400 6150 50  0001 C CNN
+F 3 "~" H 10400 6150 50  0001 C CNN
+	1    10400 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 6150 10100 6150
+Text GLabel 10100 6150 0    50   Input ~ 0
+D31
+Wire Wire Line
+	7600 4800 7700 4800
+Text GLabel 7700 4800 2    50   Input ~ 0
+D30
 $EndSCHEMATC
