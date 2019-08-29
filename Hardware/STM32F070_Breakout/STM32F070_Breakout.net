@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source C:\Users\sgmustadio\Documents\GitHub\STM32F070_Breakout\Hardware\STM32F070_Breakout\STM32F070_Breakout.sch)
-    (date "8/6/2019 6:37:17 PM")
+    (source C:\Users\sgmustadio\Documents\GitHub\YAS-0\Hardware\STM32F070_Breakout\STM32F070_Breakout.sch)
+    (date "8/8/2019 12:04:57 PM")
     (tool "Eeschema (5.1.0)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -263,7 +263,7 @@
       (tstamp 5D06E7A9))
     (comp (ref J1)
       (value 10118194-0001LF)
-      (footprint digikey-footprints:USB_Micro_B_Female_10118194-0001LF)
+      (footprint STM32F070_Breakout:USB_Micro_B_Female_10118194-0001LF_oversized_pads)
       (datasheet http://www.amphenol-icc.com/media/wysiwyg/files/drawing/10118194.pdf)
       (fields
         (field (name Category) "Connectors, Interconnects")
@@ -601,7 +601,7 @@
     (library (logical Regulator_Linear)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Regulator_Linear.lib"))
     (library (logical STM32F070CBT6)
-      (uri C:\Users\sgmustadio\Documents\GitHub\STM32F070_Breakout\Hardware\STM32F070_Breakout/libraries/STM32F070CBT6/STM32F070CBT6.lib))
+      (uri C:\Users\sgmustadio\Documents\GitHub\YAS-0\Hardware\STM32F070_Breakout/libraries/STM32F070CBT6/STM32F070CBT6.lib))
     (library (logical Switch)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Switch.lib"))
     (library (logical dk_Ferrite-Beads-and-Chips)
